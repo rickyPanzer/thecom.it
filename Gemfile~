@@ -37,3 +37,6 @@ end
 
 gem 'execjs'
 gem 'therubyracer'
+
+# gems specifically for Heroku go here
+  gem "pg"

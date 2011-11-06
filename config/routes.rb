@@ -1,4 +1,6 @@
 ThecomIt::Application.routes.draw do
+  resources :startups
+
   resources :profiles
 
   get "welcome/index"

@@ -1,0 +1,61 @@
+<%= form_for(@startup) do |f| %>
+  <% if @startup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@startup.errors.count, "error") %> prohibited this startup from being saved:</h2>
+
+      <ul>
+      <% @startup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br />
+    <%= f.text_field :picture %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :fbID %><br />
+    <%= f.number_field :fbID %>
+  </div>
+  <div class="field">
+    <%= f.label :hashEmailVerify %><br />
+    <%= f.number_field :hashEmailVerify %>
+  </div>
+  <div class="field">
+    <%= f.label :activeEmail %><br />
+    <%= f.number_field :activeEmail %>
+  </div>
+  <div class="field">
+    <%= f.label :hashPashChange %><br />
+    <%= f.number_field :hashPashChange %>
+  </div>
+  <div class="field">
+    <%= f.label :PassChangeRequest %><br />
+    <%= f.datetime_select :PassChangeRequest %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.number_field :phone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

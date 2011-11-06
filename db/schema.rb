@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111106162532) do
+ActiveRecord::Schema.define(:version => 20111106171144) do
 
   create_table "profiles", :force => true do |t|
     t.string   "username"
@@ -23,6 +23,24 @@ ActiveRecord::Schema.define(:version => 20111106162532) do
     t.integer  "activeEmail"
     t.integer  "hashPashChange"
     t.datetime "PassChangeRequest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.date     "birthdate"
+    t.integer  "points"
+  end
+
+  create_table "startups", :force => true do |t|
+    t.string   "name"
+    t.string   "password"
+    t.string   "picture"
+    t.string   "email"
+    t.integer  "fbID"
+    t.integer  "hashEmailVerify"
+    t.integer  "activeEmail"
+    t.integer  "hashPashChange"
+    t.datetime "PassChangeRequest"
+    t.string   "website"
+    t.integer  "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

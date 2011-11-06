@@ -1,0 +1,43 @@
+<h1>Listing startups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Password</th>
+    <th>Picture</th>
+    <th>Email</th>
+    <th>Fbid</th>
+    <th>Hashemailverify</th>
+    <th>Activeemail</th>
+    <th>Hashpashchange</th>
+    <th>Passchangerequest</th>
+    <th>Website</th>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @startups.each do |startup| %>
+  <tr>
+    <td><%= startup.name %></td>
+    <td><%= startup.password %></td>
+    <td><%= startup.picture %></td>
+    <td><%= startup.email %></td>
+    <td><%= startup.fbID %></td>
+    <td><%= startup.hashEmailVerify %></td>
+    <td><%= startup.activeEmail %></td>
+    <td><%= startup.hashPashChange %></td>
+    <td><%= startup.PassChangeRequest %></td>
+    <td><%= startup.website %></td>
+    <td><%= startup.phone %></td>
+    <td><%= link_to 'Show', startup %></td>
+    <td><%= link_to 'Edit', edit_startup_path(startup) %></td>
+    <td><%= link_to 'Destroy', startup, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Startup', new_startup_path %>
