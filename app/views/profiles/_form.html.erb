@@ -1,0 +1,53 @@
+<%= form_for(@profile) do |f| %>
+  <% if @profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% @profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br />
+    <%= f.text_field :picture %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :fbID %><br />
+    <%= f.number_field :fbID %>
+  </div>
+  <div class="field">
+    <%= f.label :hashEmailVerify %><br />
+    <%= f.number_field :hashEmailVerify %>
+  </div>
+  <div class="field">
+    <%= f.label :activeEmail %><br />
+    <%= f.text_field :activeEmail %>
+  </div>
+  <div class="field">
+    <%= f.label :hashPashChange %><br />
+    <%= f.number_field :hashPashChange %>
+  </div>
+  <div class="field">
+    <%= f.label :PassChangeRequest %><br />
+    <%= f.datetime_select :PassChangeRequest %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

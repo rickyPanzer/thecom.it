@@ -1,0 +1,39 @@
+<h1>Listing profiles</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Password</th>
+    <th>Picture</th>
+    <th>Email</th>
+    <th>Fbid</th>
+    <th>Hashemailverify</th>
+    <th>Activeemail</th>
+    <th>Hashpashchange</th>
+    <th>Passchangerequest</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @profiles.each do |profile| %>
+  <tr>
+    <td><%= profile.username %></td>
+    <td><%= profile.password %></td>
+    <td><%= profile.picture %></td>
+    <td><%= profile.email %></td>
+    <td><%= profile.fbID %></td>
+    <td><%= profile.hashEmailVerify %></td>
+    <td><%= profile.activeEmail %></td>
+    <td><%= profile.hashPashChange %></td>
+    <td><%= profile.PassChangeRequest %></td>
+    <td><%= link_to 'Show', profile %></td>
+    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+    <td><%= link_to 'Destroy', profile, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Profile', new_profile_path %>

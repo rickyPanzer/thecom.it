@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  password: MyString
+  picture: MyString
+  email: MyString
+  fbID: 1
+  hashEmailVerify: 1
+  activeEmail: 
+  hashPashChange: 1
+  PassChangeRequest: 2011-11-06 11:25:32
+
+two:
+  username: MyString
+  password: MyString
+  picture: MyString
+  email: MyString
+  fbID: 1
+  hashEmailVerify: 1
+  activeEmail: 
+  hashPashChange: 1
+  PassChangeRequest: 2011-11-06 11:25:32
