@@ -1,4 +1,6 @@
 ThecomIt::Application.routes.draw do
+  resources :questiontypes
+
   resources :startups
 
   resources :profiles

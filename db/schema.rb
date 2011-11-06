@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111106171144) do
+ActiveRecord::Schema.define(:version => 20111106225714) do
 
   create_table "profiles", :force => true do |t|
     t.string   "username"
@@ -27,6 +27,22 @@ ActiveRecord::Schema.define(:version => 20111106171144) do
     t.datetime "updated_at"
     t.date     "birthdate"
     t.integer  "points"
+  end
+
+  create_table "questions", :force => true do |t|
+    t.integer  "startup_id"
+    t.integer  "questiontype_id"
+    t.string   "text"
+    t.integer  "order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "questiontypes", :force => true do |t|
+    t.string   "name"
+    t.integer  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "startups", :force => true do |t|

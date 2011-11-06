@@ -11,6 +11,10 @@
     <th>Activeemail</th>
     <th>Hashpashchange</th>
     <th>Passchangerequest</th>
+    <th>created_at</th>
+    <th>updated_at</th>
+    <th>birthdate</th>
+    <th>points</th>
     <th></th>
     <th></th>
     <th></th>
@@ -27,6 +31,10 @@
     <td><%= profile.activeEmail %></td>
     <td><%= profile.hashPashChange %></td>
     <td><%= profile.PassChangeRequest %></td>
+    <td><%= profile.created_at %></td>
+    <td><%= profile.updated_at %></td>
+    <td><%= profile.birthdate %></td>
+    <td><%= profile.points %></td>
     <td><%= link_to 'Show', profile %></td>
     <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
     <td><%= link_to 'Destroy', profile, confirm: 'Are you sure?', method: :delete %></td>
