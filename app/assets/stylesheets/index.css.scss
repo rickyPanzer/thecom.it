@@ -1,3 +1,38 @@
+#popupContact{  
+  display:none;  
+  position:fixed;  
+  _position:absolute; /* hack for internet explorer 6*/  
+  height:384px;  
+  width:408px;  
+  background:#FFFFFF;  
+  border:2px solid #cecece;  
+  z-index:2;  
+  padding:12px;  
+  font-size:13px; 
+  
+  h1{  
+    text-align:left;  
+    color:#6FA5FD;  
+    font-size:22px;  
+    font-weight:700;  
+    border-bottom:1px dotted #D3D3D3;  
+    padding-bottom:2px;  
+    margin-bottom:20px;  
+  }   
+}  
+
+#popupContactClose{  
+  font-size:14px;  
+  line-height:14px;  
+  right:6px;  
+  top:4px;  
+  position:absolute;  
+  color:#6fa5fd;  
+  font-weight:700;  
+  display:block;  
+}  
+
+
 body{
   background: #FFF;
   background-image: url("/assets/homepage_background2.png");
@@ -20,52 +55,53 @@ margin-left: auto;
 width: 100%;
 }
 
-h1 {
-margin-left: auto;
-margin-right: auto;
-margin-top: 50px;
-margin-bottom: 0px;
-height: 100px;
-background: url("/assets/thecomit_homepage_logo3.png");
-text-indent: -9999px;
-background-repeat: no-repeat;
-background-position: center center;
-}
-
-h2 {
-margin-left: auto;
-margin-right: auto;
-margin-top: -10px;
-margin-bottom: 10px;
-height: 92px;
-width: 920px;
-background: url("/assets/thecomit_homepage_tagline3.png");
-text-indent: -9999px;
-background-repeat: no-repeat;
-background-position: center center;
-}
-
-h3 {
-margin-left: auto;
-margin-right: auto;
-margin-top: 10px;
-margin-bottom: 15px;
-height: 424px;
-width: 19px;
-background: url("/assets/thecomit_homepage_divider2.png");
-text-indent: -9999px;
-background-repeat: no-repeat;
-background-position: center center;
+#wrapper{
+  h1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  height: 100px;
+  background: url("/assets/thecomit_homepage_logo3.png");
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+  
+  h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  height: 92px;
+  width: 920px;
+  background: url("/assets/thecomit_homepage_tagline3.png");
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+  
+  h3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 424px;
+  width: 19px;
+  background: url("/assets/thecomit_homepage_divider2.png");
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
 }
 
 .leftside {
-margin-top: 45px;
-float: left;
-height: 500px;
-width: 460px;
-}
+  margin-top: 45px;
+  float: left;
+  height: 500px;
+  width: 460px;
 
-    .leftside #startups{
+     #startups{
       margin-top: 60px;
       left: 0px;
       width: 208px;
@@ -73,7 +109,7 @@ width: 460px;
       background-position: center center;
     }
     
-    .leftside #apply{
+     #apply{
       margin-top: 5px;
       left: 0px;
       width: 276px;
@@ -81,21 +117,22 @@ width: 460px;
       background-position: center center;
     }
     
-    .leftside #member{
+     #member{
       margin-top: 5px;
       margin-left: 100px;
       left: 20px;
       width: 167px;
       height: 25px;
     }
+}
+
+
 
 .rightside {
 margin-top: 55px;
 margin-left: 460px;
 height: 500px;
-}
-
-    .rightside #users{
+     #users{
       margin-top: 60px;
       left: 0px;
       width: 208px;
@@ -103,7 +140,7 @@ height: 500px;
       background-position: center center;
     }
     
-    .rightside #signup{
+     #signup{
       margin-top: 5px;
       left: 0px;
       width: 276px;
@@ -111,42 +148,48 @@ height: 500px;
       background-position: center center;
     }
     
-    .rightside #login{
+     #login{
       margin-top: 5px;
       margin-left: 220px;
       text-align: right;
       width: 56px;
       height: 25px;
     }
-    
-    .signin #facebook{
+}
+
+
+.signin{
+  
+     #facebook{
       position: absolute;
       left: 0px;
     }
     
-    .signin #twitter{
+     #twitter{
       position: absolute;
       left: 325px;
     }
     
-    .signin #email{
+     #email{
       position: absolute;
       left: 650px;
     }
-
-.startups {
-margin-left: auto;
-margin-right: auto;
-margin-top: 0px;
-margin-bottom: 20px;
-height: 184px;
-width: 920px;
-text-indent: -9999px;
-background-repeat: no-repeat;
-background-position: center center;
+  
 }
 
-    .startups #frame{
+
+.startups {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  height: 184px;
+  width: 920px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+     #frame{
       position: absolute;
       z-index: 0;
       left: 0px;
@@ -154,14 +197,14 @@ background-position: center center;
       height: 221px;
     }
     
-    .startups #banner{
+     #banner{
       position: absolute;
       z-index: 30;
       width: 340px;
       height: 221px;
     }
     
-    .startups #details{
+     #details{
       position: absolute;
       top: 455px;
       left: 10px;
@@ -170,7 +213,7 @@ background-position: center center;
       z-index: 20;
     }
     
-    .startups #startup{
+     #startup{
       position: absolute;
       top: 335px;
       left: 10px;
@@ -179,7 +222,7 @@ background-position: center center;
       z-index: 10;
     }
     
-    .startups #frame2{
+     #frame2{
       position: absolute;
       z-index: 0;
       left: 360px;
@@ -187,7 +230,7 @@ background-position: center center;
       height: 221px;
     }
     
-    .startups #banner2{
+     #banner2{
       position: absolute;
       z-index: 30;
       left: 360px;
@@ -195,7 +238,7 @@ background-position: center center;
       height: 221px;
     }
     
-    .startups #details2{
+     #details2{
       position: absolute;
       top: 455px;
       left: 370px;
@@ -204,7 +247,7 @@ background-position: center center;
       z-index: 20;
     }
     
-    .startups #startup2{
+     #startup2{
       position: absolute;
       top: 335px;
       left: 370px;
@@ -213,7 +256,7 @@ background-position: center center;
       z-index: 10;
     }
     
-    .startups #frame3{
+     #frame3{
       position: absolute;
       z-index: 0;
       left: 720px;
@@ -221,7 +264,7 @@ background-position: center center;
       height: 221px;
     }
     
-    .startups #banner3{
+     #banner3{
       position: absolute;
       z-index: 30;
       left: 720px;
@@ -229,7 +272,7 @@ background-position: center center;
       height: 221px;
     }
     
-    .startups #details3{
+     #details3{
       position: absolute;
       top: 455px;
       left: 730px;
@@ -238,7 +281,7 @@ background-position: center center;
       z-index: 20;
     }
     
-    .startups #startup3{
+     #startup3{
       position: absolute;
       top: 335px;
       left: 730px;
@@ -246,6 +289,9 @@ background-position: center center;
       height: 200px;
       z-index: 10;
     }
+}
+
+
     
     
 #footer{
@@ -261,24 +307,29 @@ background-position: center center;
   padding: 10px 0 10px 0;
 }
 
-.navmenu ul {
-  margin: 0; 
-  padding: 8px 0 10px 0; 
-  list-style-type: none; list-style-image: none; 
-  }
-
-.navmenu li {
-  display: inline;
+.navmenu{
+  
+   ul {
+    margin: 0; 
+    padding: 8px 0 10px 0; 
+    list-style-type: none; list-style-image: none; 
+    
+      li a {
+      text-decoration:none;  
+      margin: 5px;
+      text-align: center;
+      padding: 0px 1px 0px 10px;
+      font-size: 14px;
+      color: #ff9424
+      }  
+   }
+  
+   li {
+    display: inline;
+   }
+  
 }
 
-.navmenu ul li a {
-  text-decoration:none;  
-  margin: 5px;
-  text-align: center;
-  padding: 0px 1px 0px 10px;
-  font-size: 14px;
-  color: #ff9424
-}
 
 
 
@@ -333,25 +384,6 @@ background-position: center center;
       border: 1px solid #DFDFDF; /* Small border around our input field */  
       padding: 8px; /* Add some more space around our text */  
     }  
-    
-    form.emailForm{
-    
-      position:absolute;
-      top: 260px;
-      left: 0px;
-      width: 350px;
-      /*border: 1px solid #FFFFFF*/
-    }
-    
-    div.userName{
-      position: absolute;
-      top: 0px;
-    }
-    
-    div.emailAddress{
-      position: absolute;
-      top: 50px;
-    }
     
     input.try{
       position:absolute;

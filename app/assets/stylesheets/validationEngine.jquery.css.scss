@@ -1,0 +1,238 @@
+.inputContainer {
+	position: relative;
+	float: left;
+}
+
+.formError {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+	display: block;
+	z-index: 5000;
+	cursor: pointer;
+}
+
+.ajaxSubmit {
+	padding: 20px;
+	background: #55ea55;
+	border: 1px solid #999;
+	display: none
+}
+
+.formError .formErrorContent {
+	width: 100%;
+	background: #ee0101;
+	position:relative;
+	z-index:5001;
+	color: #fff;
+	width: 150px;
+	font-family: tahoma;
+	font-size: 11px;
+	border: 2px solid #ddd;
+	box-shadow: 0 0 6px #000;
+	-moz-box-shadow: 0 0 6px #000;
+	-webkit-box-shadow: 0 0 6px #000;
+	padding: 4px 10px 4px 10px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.greenPopup .formErrorContent {
+	background: #33be40;
+}
+
+.blackPopup .formErrorContent {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow {
+	width: 15px;
+	margin: -2px 0 0 13px;
+  position:relative;
+  z-index: 5006;
+}
+
+.formError .formErrorArrowBottom {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+	margin: 0px 0 0 12px;
+  top:2px;
+}
+
+.formError .formErrorArrow div {
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	box-shadow: 0 2px 3px #444;
+	-moz-box-shadow: 0 2px 3px #444;
+	-webkit-box-shadow: 0 2px 3px #444;
+	font-size: 0px;
+	height: 1px;
+	background: #ee0101;
+	margin: 0 auto;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+}
+
+.formError .formErrorArrowBottom div {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.greenPopup .formErrorArrow div {
+	background: #33be40;
+}
+
+.blackPopup .formErrorArrow div {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow .line10 {
+	width: 15px;
+	border: none;
+}
+
+.formError .formErrorArrow .line9 {
+	width: 13px;
+	border: none;
+}
+
+.formError .formErrorArrow .line8 {
+	width: 11px;
+}
+
+.formError .formErrorArrow .line7 {
+	width: 9px;
+}
+
+.formError .formErrorArrow .line6 {
+	width: 7px;
+}
+
+.formError .formErrorArrow .line5 {
+	width: 5px;
+}
+
+.formError .formErrorArrow .line4 {
+	width: 3px;
+}
+
+.formError .formErrorArrow .line3 {
+	width: 1px;
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	border-bottom: 0 solid #ddd;
+}
+
+.formError .formErrorArrow .line2 {
+	width: 3px;
+	border: none;
+	background: #ddd;
+}
+
+.formError .formErrorArrow .line1 {
+	width: 1px;
+	border: none;
+	background: #ddd;
+}
+
+#popupContact{
+	
+	/* rounded corners */
+	-moz-border-radius:12px;
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius:12px;
+	
+	background-color:#f5f5f5;
+	padding:15px;
+	
+	
+	.clear{
+		clear:both;
+	}
+	
+	#main-container{
+		width:400px;
+		margin:30px auto;
+	}
+	
+	td{
+		/* prevent multiline text */
+		white-space:nowrap;
+	}
+	
+	a, a:visited {
+		color:#00BBFF;
+		text-decoration:none;
+		outline:none;
+	}
+	
+	a:hover{
+		text-decoration:underline;
+	}
+	
+	h1{
+		color:#777777;
+		font-size:22px;
+		font-weight:normal;
+		text-transform:uppercase;
+		margin-bottom:5px;
+	}
+	
+	h2{
+		font-weight:normal;
+		font-size:10px;
+	
+		text-transform:uppercase;
+	
+		color:#aaaaaa;
+		margin-bottom:15px;
+	
+		border-bottom:1px solid #eeeeee;
+		margin-bottom:15px;
+		padding-bottom:10px;
+	}
+	
+	textarea{
+		color:#404040;
+		font-family:Arial,Helvetica,sans-serif;
+		font-size:12px;
+	}
+	
+	td > button{
+		/* A special CSS selector that targets non-IE6 browsers */
+		text-indent:8px;
+	}
+	
+	.error{
+		/* this class is used if JS is disabled */
+		background-color:#AB0000;
+		color:white;
+		font-size:10px;
+		font-weight:bold;
+		margin-top:10px;
+		padding:10px;
+		text-transform:uppercase;
+		width:300px;
+	}
+	
+	#loading{
+		/* the loading gif is hidden on page load */
+		position:relative;
+		bottom:9px;
+		visibility:hidden;
+	}
+	
+	.tutorial-info{
+		color:white;
+		text-align:center;
+		padding:10px;
+		margin-top:10px;
+	}
+}

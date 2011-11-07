@@ -1,0 +1,65 @@
+
+
+<form id="contact-form" name="contact-form" method="post" action="submit.php">	<!-- The form, sent to submit.php -->
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="5">
+	
+	<tr>
+	<td width="18%"><label for="name">Name</label></td>	<!-- Text label for the input field -->
+	<td width="45%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="name" value="<?=$_SESSION['post']['name']?>" /></td>
+	<!-- We are using session to prevent losing data between page redirects -->
+	
+	<td width="37%" id="errOffset">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td><label for="email">Email</label></td>
+	<td><input type="text" class="validate[required,custom[email]]" name="email" id="email" value="<?=$_SESSION['post']['email']?>" /></td>
+	<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td><label for="subject">Subject</label></td>
+	
+	<!-- This select is being replaced entirely by the jqtransorm plugin -->
+	
+	<td><select name="subject" id="subject">
+	<option value="" selected="selected"> - Choose -</option>
+	<option value="Question">Question</option>
+	<option value="Business proposal">Business proposal</option>
+	<option value="Advertisement">Advertising</option>
+	<option value="Complaint">Complaint</option>
+	</select>          </td>
+	<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td valign="top"><label for="message">Message</label></td>
+	<td><textarea name="message" id="message" class="validate[required]" cols="35" rows="5"><?=$_SESSION['post']['message']?></textarea></td>
+	<td valign="top">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td><label for="captcha"><?=$_SESSION['n1']?> + <?=$_SESSION['n2']?> =</label></td>
+	
+	<!-- A simple captcha math problem -->
+	
+	<td><input type="text" class="validate[required,custom[onlyNumber]]" name="captcha" id="captcha" /></td>
+	<td valign="top">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td valign="top">&nbsp;</td>
+	<!-- These input buttons are being replaced with button elements -->
+	<td colspan="2"><input type="submit" name="button" id="button" value="Submit" />
+	<input type="reset" name="button2" id="button2" value="Reset" />
+	<?=$str?>
+	
+	<!-- $str contains the error string if the form is used with JS disabled -->
+	
+	<img id="loading" src="img/ajax-load.gif" width="16" height="16" alt="loading" />
+	<!-- the rotating gif animation, hidden by default -->
+	</td></tr>
+	
+	</table>
+</form>
