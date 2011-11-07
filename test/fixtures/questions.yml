@@ -2,10 +2,12 @@
 
 one:
   startup_id: 1
+  questiontype_id: 1
   text: MyString
   order: 1
 
 two:
   startup_id: 1
+  questiontype_id: 1
   text: MyString
   order: 1
