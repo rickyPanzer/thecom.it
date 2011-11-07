@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ThecomIt</title>
+  <title>theCom.it</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta name="Description" content="Providing startups with the best community of users.">
+  <link rel="shortcut icon" href="http://thecom.it/alpha/test2/favicon.ico">
+  <link rel="icon" type="image/gif" href="http://thecom.it/alpha/test2/animated_favicon1.gif">
+
 </head>
 <body>
 
 <%= yield %>
 
 </body>
+
+<div id="footer">
+
+	<div class="navmenu">
+	
+		<ul><li><a href="http://www.thecom.it/alpha/about.php">About</a></li>
+		<li></li>
+		<li><a href="http://www.thecom.it/alpha/howto.php">How It Works</a></li>
+		<li></li>
+		<li><a href="http://thecomit.tumblr.com/">Blog</a></li>
+		<li></li>        
+		<li><a href="http://www.thecom.it/alpha/contact.php">Contact</a></li>
+		<li></li>        
+		<li><a href="http://facebook.com/pages/thecomit/155505574514001" target="_blank"><img border="0" src="/assets/facebook.png" /></a></li>
+		<li></li>		
+		<li><a href="http://twitter.com/#!/thecomit" target="_blank"><img border="0" src="/assets/twitter.png" /></a></li>
+		<li></li>		
+		</ul>		        
+	
+	</div> <!-- navmenu -->				
+	
+	Copyright &#169; <?php echo date('Y');?> THECOM.IT. All Rights Reserved.	</p>	
+	
+</div>
+
 </html>
